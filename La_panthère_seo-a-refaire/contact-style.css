@@ -1,0 +1,319 @@
+.html,
+body {
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.width-100 {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 5px;
+}
+.color-black {
+  color: black;
+}
+.width-100 {
+  width: 100%;
+}
+.margin-left {
+  margin-left: 560px;
+}
+.font-size {
+  font-size: 15px;
+}
+.alignement {
+  display: flex;
+  align-items: center;
+}
+
+/* Modification de la navigation */
+.img-nav {
+  width: auto;
+  height: 45px;
+}
+.navbar {
+  margin-top: 15px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+.navbar-brand {
+  height: auto;
+  padding: 3px 15px;
+  font-size: 25px;
+  font-weight: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+.navbar-brand img {
+  max-height: 200px;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+.navbar .nav {
+  padding-top: 2px;
+  margin-right: -16px;
+  float: right;
+  z-index: 1;
+}
+.nav > li {
+  float: left;
+  margin-top: 4px;
+  font-size: 16px;
+}
+.navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
+
+/* Modification des icones dans le footer */
+i.fa-brands {
+  font-size: 30px;
+}
+i.fa-brands:hover {
+  transition: 400ms;
+  transform: scale(2);
+}
+
+/* Modification sur la page web */
+.container {
+  max-width: 1250px;
+}
+a.btn-hover:hover {
+  background-color: #f3976c !important;
+  color: white;
+  transition: 300ms;
+}
+.bloc {
+  width: 100%;
+}
+.cta-hero {
+  margin-top: 22px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hero-bloc-text-sub {
+  font-size: 36px;
+}
+.btn-atomic-tangerine {
+  background: #f3976c;
+  color: black !important;
+}
+.btn-atomic-tangerine:hover {
+  background: #c27956 !important;
+  color: #ffffff !important;
+}
+.horaire-adress {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: 500;
+  transition: all 0.3s ease-in-out;
+}
+.scrollToTop span {
+  margin-top: 6px;
+}
+.showScrollTop {
+  font-size: 14px;
+  opacity: 1;
+}
+.social {
+  max-width: 400px;
+  margin: 40px auto 45px;
+}
+
+/* Page de chargement du site */
+#page-loading-blocs-notifaction {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: #ffffff url('img/pageload-spinner.gif') no-repeat center center;
+}
+
+/* Modification des icones */
+.icon-md {
+  font-size: 30px !important;
+}
+.icon-md:hover {
+  transition: 400ms;
+  transform: scale(2);
+  color: black;
+}
+
+/* Modification des tailles blocs */
+.bloc-sm {
+  padding: 20px 50px;
+}
+.bloc-md {
+  padding: 50px;
+}
+.bloc-lg {
+  padding: 70px;
+}
+.mg-lg {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.panel-sq,
+.panel-sq .panel-heading,
+.panel-sq .panel-footer {
+  border-radius: 0;
+}
+.panel-rd {
+  border-radius: 30px;
+}
+.panel-rd .panel-heading {
+  border-radius: 29px 29px 0 0;
+}
+.panel-rd .panel-footer {
+  border-radius: 0 0 29px 29px;
+}
+/*modifications des titres*/
+h1 {
+  font-size: 43px;
+}
+h2 {
+  font-size: 28px;
+}
+p {
+  font-size: 15px;
+}
+/* modifications des backgrounds */
+.background {
+  background-color: #f3976c;
+}
+.background-poste-travail {
+  background-image: url(./img/agence-la-panthere-top-assombri.webp);
+  background-size: cover;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banniere-contacte {
+  position: relative;
+  font-size: 23px;
+  color: white;
+}
+.texture-paper::before {
+  background: url('img/texture-paper.png');
+  background-size: 280px 280px;
+}
+
+/* Modification des differents ecran */
+@media screen and (max-width: 900px) {
+  /*modification général*/
+  .row.alignement {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-hero {
+    margin-bottom: 100px;
+  }
+  /*modification des blocs*/
+  .width-900 {
+    width: 85%;
+    margin-bottom: 50px;
+  }
+  .col-sm-6 {
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+  }
+  /*modification des icones*/
+  .icon-md {
+    margin-bottom: 33px;
+  }
+  i.fa-brands {
+    margin-bottom: 30px;
+  }
+  /*modification du titre*/
+  h2 {
+    font-size: 29px;
+    margin-bottom: 35px;
+  }
+  /*modification logo sociaux footer*/
+  .social {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 25px auto 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /*modification de la nav*/
+  img.img-nav {
+    width: 200px;
+    height: 37px;
+  }
+  .navbar .nav {
+    margin-right: 15px;
+  }
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 25px;
+  }
+  /*ajout d'un border bottom sous les liens acceuil & contacte*/
+  .border-bottom-500 {
+    border-bottom: 3px solid #fff;
+    border-radius: 35px;
+  }
+  /*modification des taille bloc*/
+  .col-sm-6 {
+    width: 100%;
+  }
+  .bloc-lg {
+    padding: 25px;
+  }
+  /*modification des titres et texte*/
+  h1 {
+    font-size: 23px;
+    margin-bottom: 45px;
+  }
+  h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /*modification du text avec adress contacte*/
+  .horaire-adress {
+    font-size: 10px;
+  }
+  /*modification des tailles blocs*/
+  .bloc-sm {
+    padding: 20px 20px;
+  }
+  .bloc-lg {
+    padding: 35px;
+  }
+}
